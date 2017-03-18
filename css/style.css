@@ -135,7 +135,7 @@ body, html {
     display: none; } }
 
 .container .right-container .img {
-  background-image: url("/img/hero-bg.png");
+  background-image: url("../img/hero-bg.png");
   max-width: 650px;
   position: relative;
   margin: 0 auto;
@@ -345,7 +345,7 @@ section .skills #java:after {
     height: 1500px; } }
 
 .section .bg {
-  background-image: url("/img/bg.jpg");
+  background-image: url("../img/bg.jpg");
   width: 100%;
   height: 400px;
   background-size: cover;
@@ -442,7 +442,7 @@ section .skills #java:after {
   padding: 20px; }
 
 .section .main .list-container .front-end .icon, .section .main .list-container .back-end .icon, .section .main .list-container .consult .icon {
-  background-image: url("/img/monitor.png");
+  background-image: url("../img/monitor.png");
   background-size: cover;
   width: 50px;
   height: 50px;
@@ -535,7 +535,7 @@ section .gallery .item .content {
   width: 100%;
   top: 400px;
   transition: all 300ms ease-in-out;
-  transition-origin: bottom-top; }
+  transform-origin: bottom-top; }
 
 section .gallery .item .content:after {
   content: '';
@@ -553,22 +553,22 @@ section .gallery .item:hover .content {
   cursor: pointer; }
 
 section .gallery .item:nth-child(1) {
-  background-image: url("/img/1.jpeg"); }
+  background-image: url("../img/1.jpeg"); }
 
 section .gallery .item:nth-child(2) {
-  background-image: url("/img/2.jpeg"); }
+  background-image: url("../img/2.jpeg"); }
 
 section .gallery .item:nth-child(3) {
-  background-image: url("/img/3.jpeg"); }
+  background-image: url("../img/3.jpeg"); }
 
 section .gallery .item:nth-child(4) {
-  background-image: url("/img/4.jpeg"); }
+  background-image: url("../img/4.jpeg"); }
 
 section .gallery .item:nth-child(5) {
-  background-image: url("/img/5.jpeg"); }
+  background-image: url("../img/5.jpeg"); }
 
 section .gallery .item:nth-child(6) {
-  background-image: url("/img/6.jpeg"); }
+  background-image: url("../img/6.jpeg"); }
 
 section .gallery .button {
   width: 150px;
