@@ -1,0 +1,19 @@
+@mixin btn {
+    width: 140px;
+    height: 50px;
+    background: black;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 100;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transition: all 0.3s ease-in-out;
+        &:hover {            
+            background: white;
+            cursor: pointer;
+            color: black;
+        }
+}

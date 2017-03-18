@@ -1,0 +1,145 @@
+body, html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative; }
+
+.container .border {
+  border: 15px solid #e8e8e8;
+  border-left: 0px;
+  z-index: 0;
+  padding: 300px 200px;
+  position: absolute; }
+
+@media (max-width: 768px) {
+  .container .border {
+    padding: 250px 100px; } }
+
+@media (max-width: 479px) {
+  .container .border {
+    padding: 210px 50px; } }
+
+.container .left-container {
+  height: 100vh;
+  flex-basis: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+@media (max-width: 479px) {
+  .container .left-container {
+    min-width: 50%;
+    z-index: 1; } }
+
+.container .left-container .content {
+  max-width: 500px;
+  padding: 20px 40px;
+  position: relative;
+  font-family: "Cormorant";
+  margin-left: 60px; }
+
+@media (max-width: 479px) {
+  .container .left-container .content {
+    margin-left: 0;
+    padding: 20px; } }
+
+.container .left-container .content h1 {
+  font-size: 46px;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 300px;
+  margin-bottom: 10px; }
+
+.container .left-container .content p {
+  font-size: 22px; }
+
+.container .left-container .content .button {
+  width: 140px;
+  height: 50px;
+  background: black;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  margin-right: 20px;
+  box-sizing: border-box;
+  margin-top: 20px; }
+
+.container .left-container .content .button:hover {
+  background: white;
+  cursor: pointer;
+  color: black; }
+
+.container .left-container .content .button:last-child {
+  width: 170px;
+  background: white;
+  border: 1px solid black;
+  box-shadow: none;
+  color: black;
+  box-sizing: border-box;
+  margin-right: 0; }
+
+.container .left-container .content .button:last-child:hover {
+  background: black;
+  color: white; }
+
+.container .right-container {
+  position: relative;
+  flex-basis: 50%;
+  height: 100vh;
+  background: #e1e1e1; }
+
+.container .right-container nav {
+  position: absolute;
+  top: 2px; }
+
+.container .right-container nav ul {
+  list-style-type: none; }
+
+.container .right-container nav ul li {
+  display: inline-block;
+  margin-right: 50px; }
+
+.container .right-container .border {
+  border: 12px solid white;
+  border-right: 0px;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  padding: 240px 150px;
+  z-index: 0; }
+
+@media (max-width: 479px) {
+  .container .right-container .border {
+    display: none; } }
+
+.container .right-container .img {
+  background-image: url("/img/hero-bg.png");
+  max-width: 650px;
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }

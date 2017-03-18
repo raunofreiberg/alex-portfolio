@@ -1,0 +1,46 @@
+@mixin breakpoint($class) {
+    @if $class==xs {
+        @media (max-width: 1080px) {
+            @content;
+        }
+    }
+    @else if $class==xxs {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+        @else if $class==sm {
+            @media (min-width: 768px) {
+                @content;
+            }
+        }
+        @else if $class==1500 {
+            @media (max-width: 1500px) {
+                @content;
+            }
+        
+        }
+        @else if $class==phone {
+            @media (max-width: 479px) {
+                @content;
+            }
+        }
+        @else if $class==860 {
+            @media (max-width: 860px) {
+                @content;
+            }
+        }
+        @else if $class==md {
+            @media (min-width: 992px) {
+                @content;
+            }
+        }
+        @else if $class==lg {
+            @media (max-width: 1200px) {
+                @content;
+            }
+        }
+        @else {
+            @warn "Breakpoint mixin supports: xs, sm, md, lg";
+        }
+    }

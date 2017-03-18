@@ -1,0 +1,124 @@
+@import '1-base/_vars.scss';
+@import '1-base/_mixins.scss';
+@import '1-base/_breakpoints.scss';
+@import '../bourbon/_bourbon.scss';
+
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    @include display(flex);
+    flex-wrap: nowrap;
+    position: relative;
+
+        .border {
+            border: 15px solid #e8e8e8;
+            border-left: 0px;
+            z-index: 0;
+            padding: 300px 200px;
+            position: absolute;  
+                 @include breakpoint(xxs) {
+                    padding: 250px 100px;
+                }          
+                @include breakpoint(phone) {
+                    padding: 210px 50px;
+                }
+        }
+
+.left-container {
+    //background: lightblue;
+    height: 100vh;
+    flex-basis: 50%;
+    @include display(flex);
+    flex-wrap: nowrap;
+    align-items: center;
+        @include breakpoint(phone) {
+            min-width: 50%;
+            z-index: 1;
+        }
+        .content {
+            //background: pink;
+            max-width: 500px;
+            padding: 20px 40px;    
+            position: relative;
+            font-family: $mainfont;
+            margin-left: 60px;
+                @include breakpoint(phone) {
+                    margin-left: 0;
+                    padding: 20px;
+                }
+                h1 {
+                    font-size: 46px;                    
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    max-width: 300px;   
+                    margin-bottom: 10px;                 
+                }
+                p {
+                    font-size: 22px;
+                    
+                }
+                .button {
+                    @include btn;
+                    margin-right: 20px;
+                    box-sizing: border-box;
+                    margin-top: 20px;
+                    &:last-child {
+                        width: 170px;
+                        background: white;
+                        border: 1px solid black;
+                        box-shadow: none;
+                        color: black;
+                        box-sizing: border-box;
+                        margin-right: 0;
+                            &:hover {
+                                background: black;                                
+                                color: white;
+                            }
+                    }
+                }
+        }
+}
+
+.right-container {
+    position: relative;
+    flex-basis: 50%;
+    height: 100vh;
+    background: $bg-color;
+        nav {
+            
+            position: absolute;
+            top: 2px;            
+                ul {
+                    list-style-type: none;                    
+                    li {
+                        display: inline-block;
+                        margin-right: 50px;
+                    }
+                }     
+        }
+        .border {
+            border: 12px solid white;
+            border-right: 0px;            
+            @include position(absolute, 200px 0 null null);
+            padding: 240px 150px;
+            z-index: 0;            
+                @include breakpoint(phone) {
+                    display: none;
+                }          
+        }
+        .img {
+            background-image: url("/img/hero-bg.png");
+            max-width: 650px;
+            position: relative;
+            margin: 0 auto;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+}
+}
