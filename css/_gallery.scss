@@ -7,7 +7,7 @@ section {
     font-family: $mainfont;
     h5 {
         @include headline;
-        max-width: 500px;
+        max-width: 700px;
         max-height: 100px;
         margin: 0 auto 20px;
     }
@@ -21,11 +21,17 @@ section {
             width: 370px;
             height: 280px;
             background-image: url("http://fillmurray.com/370/280");
+            background-size: cover;
             display: inline-block;
-            margin-right: 10px;
-            position: relative;
-            margin-top: 10px;
-            overflow: hidden;            
+            margin: 15px 15px 0 0;
+            position: relative;            
+            box-shadow: 0 0 10px rgba(0,0,0,0.50);
+            overflow: hidden;       
+                @include breakpoint(phone) {
+                    margin: 10px auto;
+                    max-width: 300px;
+                    max-height: 300px;
+                }     
             .content {
                 background: rgba(0, 0, 0, 0.80);
                 position: absolute;
