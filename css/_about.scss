@@ -8,9 +8,9 @@ section {
     //background: pink;
     padding-bottom: 120px;
     margin: 0 auto;
-                    @include breakpoint(lg) {
-                height: 1200px;
-            }
+    @include breakpoint(lg) {
+        height: 1200px;
+    }
     .about {
         max-width: 570px;
         height: 400px;
@@ -26,10 +26,10 @@ section {
             margin-bottom: 15px;
         }
         .line {
-            width: 60px;
-            height: 2px;
-            background: $blacky;
-            margin: 0 auto;
+            @include line;
+        }
+        .line2 {
+            @include line2;
         }
         p {
             margin-top: 40px;
@@ -52,12 +52,7 @@ section {
             @include headline;
             margin-bottom: 15px;
         }
-        .line {
-            width: 60px;
-            height: 2px;
-            background: $blacky;
-            margin: 0 auto 50px auto;
-        }
+
         .skill {
             background: #dfdfdf;
             display: inline-block;

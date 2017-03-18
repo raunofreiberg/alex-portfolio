@@ -14,6 +14,9 @@ section {
     .line {
         @include line;
     }
+    .line2 {
+        @include line2;
+    }
     .gallery {
         text-align: center;
         margin-top: 30px;
@@ -24,14 +27,14 @@ section {
             background-size: cover;
             display: inline-block;
             margin: 15px 15px 0 0;
-            position: relative;            
-            box-shadow: 0 0 10px rgba(0,0,0,0.50);
-            overflow: hidden;       
-                @include breakpoint(phone) {
-                    margin: 10px auto;
-                    max-width: 300px;
-                    max-height: 300px;
-                }     
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+            overflow: hidden;            
+            @include breakpoint(phone) {
+                margin: 10px auto;
+                max-width: 300px;
+                max-height: 300px;
+            }
             .content {
                 background: rgba(0, 0, 0, 0.80);
                 position: absolute;
@@ -42,27 +45,44 @@ section {
                 font-size: 30px;
                 height: 100%;
                 width: 100%;
-                top: 400px;                
+                top: 400px;
                 transition: all 300ms ease-in-out;
                 transition-origin: bottom-top;
-                    &:after {
-                        content: '';
-                        border: 1px solid white;
-                        padding: 20px;
-                        height: 77%;
-                        position: absolute;
-                        left: 10px;
-                        right: 10px;
-                        top: 10px;           
-                        
-                        
-                    }
+                &:after {
+                    content: '';
+                    border: 1px solid white;
+                    padding: 20px;
+                    height: 77%;
+                    position: absolute;
+                    left: 10px;
+                    right: 10px;
+                    top: 10px;
+                }
             }
             &:hover .content {
                 top: 0;
                 visibility: visible;
                 cursor: pointer;
             }
+            &:nth-child(1) {
+                background-image: url("/img/1.jpeg");
+            }
+            &:nth-child(2) {
+                background-image: url("/img/2.jpeg");
+            }
+            &:nth-child(3) {
+                background-image: url("/img/3.jpeg");
+            }
+            &:nth-child(4) {
+                background-image: url("/img/4.jpeg");
+            }
+            &:nth-child(5) {
+                background-image: url("/img/5.jpeg");
+            }
+            &:nth-child(6) {
+                background-image: url("/img/6.jpeg");
+            }
+
         }
         .button {
             @include btn;

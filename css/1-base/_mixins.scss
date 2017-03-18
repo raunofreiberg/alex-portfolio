@@ -29,5 +29,38 @@
     width: 60px;
     height: 2px;
     background: $blacky;
-    margin: 0 auto
+    margin: 0 auto;
+    position: relative;
+    &:after {
+        content: '';
+        background: white;
+        position: absolute;
+        width: 2px;
+        left: 24px;
+        height: 2px;
+    }
+    &:before {
+        content: '';
+        background: white;
+        position: absolute;
+        width: 2px;
+        right: 24px;
+        height: 2px;
+    }
+}
+
+@mixin line2 {
+    width: 30px;
+    height: 2px;
+    background: $blacky;
+    margin: 3px auto;
+    position: relative;
+    &:after {
+        content: '';
+        background: white;
+        position: absolute;
+        width: 2px;
+        right: 5px;
+        height: 2px;
+    }
 }

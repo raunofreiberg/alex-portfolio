@@ -20,7 +20,7 @@
         height: 400px;
         background-size: cover;
         background-position: center;
-        filter: brightness(40%) blur(2px);        
+        filter: brightness(40%);        
     }
     .main {
         background: white;
@@ -30,7 +30,7 @@
         min-width: 300px;
         max-width: 1170px;
         @include position(absolute,
-        218px 0 null 0);
+        170px 0 null 0);
         margin: 0 auto;
             @include breakpoint(lg) {
                 margin-left: 50px;
@@ -50,6 +50,9 @@
         }
         .line {
             @include line;
+        }
+        .line2 {
+            @include line2;
         }
         .list-container {
             @include display(flex);

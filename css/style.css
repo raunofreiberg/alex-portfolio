@@ -44,8 +44,7 @@ body, html {
 
 @media (max-width: 479px) {
   .container .left-container {
-    min-width: 50%;
-    z-index: 1; } }
+    min-width: 60%; } }
 
 .container .left-container .content {
   max-width: 500px;
@@ -172,7 +171,39 @@ section .about .line {
   width: 60px;
   height: 2px;
   background: #212121;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+section .about .line:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  left: 24px;
+  height: 2px; }
+
+section .about .line:before {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 24px;
+  height: 2px; }
+
+section .about .line2 {
+  width: 30px;
+  height: 2px;
+  background: #212121;
+  margin: 3px auto;
+  position: relative; }
+
+section .about .line2:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 5px;
+  height: 2px; }
 
 section .about p {
   margin-top: 40px;
@@ -212,12 +243,6 @@ section .skills h3 {
   font-weight: normal;
   text-align: center;
   margin-bottom: 15px; }
-
-section .skills .line {
-  width: 60px;
-  height: 2px;
-  background: #212121;
-  margin: 0 auto 50px auto; }
 
 section .skills .skill {
   background: #dfdfdf;
@@ -324,7 +349,7 @@ section .skills #java:after {
   height: 400px;
   background-size: cover;
   background-position: center;
-  filter: brightness(40%) blur(2px); }
+  filter: brightness(40%); }
 
 .section .main {
   background: white;
@@ -334,7 +359,7 @@ section .skills #java:after {
   min-width: 300px;
   max-width: 1170px;
   position: absolute;
-  top: 218px;
+  top: 170px;
   right: 0;
   left: 0;
   margin: 0 auto; }
@@ -364,7 +389,39 @@ section .skills #java:after {
   width: 60px;
   height: 2px;
   background: #212121;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+.section .main .line:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  left: 24px;
+  height: 2px; }
+
+.section .main .line:before {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 24px;
+  height: 2px; }
+
+.section .main .line2 {
+  width: 30px;
+  height: 2px;
+  background: #212121;
+  margin: 3px auto;
+  position: relative; }
+
+.section .main .line2:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 5px;
+  height: 2px; }
 
 .section .main .list-container {
   display: -webkit-box;
@@ -410,7 +467,39 @@ section .line {
   width: 60px;
   height: 2px;
   background: #212121;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+
+section .line:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  left: 24px;
+  height: 2px; }
+
+section .line:before {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 24px;
+  height: 2px; }
+
+section .line2 {
+  width: 30px;
+  height: 2px;
+  background: #212121;
+  margin: 3px auto;
+  position: relative; }
+
+section .line2:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 5px;
+  height: 2px; }
 
 section .gallery {
   text-align: center;
@@ -461,6 +550,24 @@ section .gallery .item:hover .content {
   top: 0;
   visibility: visible;
   cursor: pointer; }
+
+section .gallery .item:nth-child(1) {
+  background-image: url("/img/1.jpeg"); }
+
+section .gallery .item:nth-child(2) {
+  background-image: url("/img/2.jpeg"); }
+
+section .gallery .item:nth-child(3) {
+  background-image: url("/img/3.jpeg"); }
+
+section .gallery .item:nth-child(4) {
+  background-image: url("/img/4.jpeg"); }
+
+section .gallery .item:nth-child(5) {
+  background-image: url("/img/5.jpeg"); }
+
+section .gallery .item:nth-child(6) {
+  background-image: url("/img/6.jpeg"); }
 
 section .gallery .button {
   width: 150px;
