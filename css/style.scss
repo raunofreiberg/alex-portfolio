@@ -1,2 +1,12 @@
-@import '_hero.scss';
+    //IMPORT BOURBON
 @import '../bourbon/_bourbon.scss';
+
+    //HERO
+
+@import '_hero.scss';
+
+    //ABOUT SECTION
+@import '_about.scss';
+
+    //WHAT I DO
+@import '_whatido.scss';    

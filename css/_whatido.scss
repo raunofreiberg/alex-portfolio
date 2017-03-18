@@ -1,0 +1,89 @@
+@import '1-base/_vars.scss';
+@import '1-base/_mixins.scss';
+@import '1-base/_breakpoints.scss';
+@import '../bourbon/_bourbon.scss';
+.section {
+    height: 860px;
+    background: cyan;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+    .bg {
+        background-image: url("/img/bg.jpg");
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .main {
+        background: white;
+        font-family: $mainfont;
+        box-shadow: 0 0 70px rgba(0,0,0,0.45);
+        height: 517px;        
+        max-width: 1170px;
+        @include position(absolute,
+        218px 0 null 0);
+        margin: 0 auto;
+            @include breakpoint(lg) {
+                margin-left: 50px;
+                margin-right: 50px;
+            }       
+        h4 {
+            @include headline;
+            margin: 60px auto 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .line {
+            @include line;
+        }
+        .list-container {
+            @include display(flex);
+            justify-content: center;  
+            flex-wrap: wrap;                      
+            padding: 50px;            
+            text-align: center;
+                .front-end, .back-end, .consult {
+                    max-width: 500px;                    
+                    padding: 20px;                                                                        
+                }
+                .front-end {
+                    .icon-front {
+                        background-image: url("/img/monitor.png");
+                        background-size: cover;
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 auto;
+                    }
+                    p {
+                        max-width: 270px;
+                    }
+                }
+                .back-end {
+                    .icon-back {
+                        background-image: url("/img/monitor.png");
+                        background-size: cover;
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 auto;
+                    }
+                     p {
+                        max-width: 270px;
+                    }
+                }
+                .consult {
+                    .icon-consult {
+                        background-image: url("/img/monitor.png");
+                        background-size: cover;
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 auto;
+                    }
+                     p {
+                        max-width: 270px;
+                    }
+                }
+
+        }
+    }
+}

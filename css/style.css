@@ -70,9 +70,9 @@ body, html {
   font-size: 22px; }
 
 .container .left-container .content .button {
-  width: 140px;
+  width: 150px;
   height: 50px;
-  background: black;
+  background: #212121;
   color: white;
   display: inline-block;
   text-align: center;
@@ -89,7 +89,7 @@ body, html {
 .container .left-container .content .button:hover {
   background: white;
   cursor: pointer;
-  color: black; }
+  color: #212121; }
 
 .container .left-container .content .button:last-child {
   width: 170px;
@@ -143,3 +143,253 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+
+section {
+  height: 850px;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+@media (max-width: 1200px) {
+  section {
+    height: 1200px; } }
+
+section .about {
+  max-width: 570px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Cormorant"; }
+
+section .about h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 15px; }
+
+section .about .line {
+  width: 60px;
+  height: 2px;
+  background: #212121;
+  margin: 0 auto; }
+
+section .about p {
+  margin-top: 40px;
+  padding: 0 30px; }
+
+section .about .btn {
+  width: 150px;
+  height: 50px;
+  background: #212121;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  width: 200px;
+  margin-top: 40px; }
+
+section .about .btn:hover {
+  background: white;
+  cursor: pointer;
+  color: #212121; }
+
+section .skills {
+  max-width: 1170px;
+  height: 350px;
+  font-family: "Cormorant";
+  text-align: center;
+  padding-bottom: 50px; }
+
+section .skills h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 15px; }
+
+section .skills .line {
+  width: 60px;
+  height: 2px;
+  background: #212121;
+  margin: 0 auto 50px auto; }
+
+section .skills .skill {
+  background: #dfdfdf;
+  display: inline-block;
+  width: 370px;
+  height: 20px;
+  position: relative;
+  margin: 50px 15px 0 0; }
+
+@media (max-width: 479px) {
+  section .skills .skill {
+    width: 280px; } }
+
+section .skills .skill span {
+  width: 300px;
+  position: absolute;
+  left: 0;
+  background: #212121;
+  height: 20px; }
+
+@media (max-width: 479px) {
+  section .skills .skill span {
+    width: 260px; } }
+
+section .skills #html span, section .skills #js:after span, section .skills #php:after span, section .skills #python:after span, section .skills #ruby:after span, section .skills #java:after span {
+  width: 345px; }
+
+section .skills #html:after, section .skills #js:after, section .skills #php:after, section .skills #python:after, section .skills #ruby:after, section .skills #java:after {
+  content: 'HTML/CSS';
+  color: #212121;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  text-transform: uppercase;
+  left: 0; }
+
+section .skills #js span {
+  width: 200px; }
+
+@media (max-width: 479px) {
+  section .skills #js span {
+    width: 270px; } }
+
+section .skills #js:after {
+  content: 'Javascript'; }
+
+section .skills #php span {
+  width: 320px; }
+
+@media (max-width: 479px) {
+  section .skills #php span {
+    width: 200px; } }
+
+section .skills #php:after {
+  content: 'Php'; }
+
+section .skills #python span {
+  width: 200px; }
+
+@media (max-width: 479px) {
+  section .skills #python span {
+    width: 180px; } }
+
+section .skills #python:after {
+  content: 'Python'; }
+
+section .skills #ruby span {
+  width: 360px; }
+
+@media (max-width: 479px) {
+  section .skills #ruby span {
+    width: 260px; } }
+
+section .skills #ruby:after {
+  content: 'Ruby'; }
+
+section .skills #java span {
+  width: 350px; }
+
+@media (max-width: 479px) {
+  section .skills #java span {
+    width: 270px; } }
+
+section .skills #java:after {
+  content: 'Java'; }
+
+.section {
+  height: 860px;
+  background: cyan;
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto; }
+
+.section .bg {
+  background-image: url("/img/bg.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center; }
+
+.section .main {
+  background: white;
+  font-family: "Cormorant";
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.45);
+  height: 517px;
+  max-width: 1170px;
+  position: absolute;
+  top: 218px;
+  right: 0;
+  left: 0;
+  margin: 0 auto; }
+
+@media (max-width: 1200px) {
+  .section .main {
+    margin-left: 50px;
+    margin-right: 50px; } }
+
+.section .main h4 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 60px auto 20px;
+  max-width: 300px;
+  text-align: center; }
+
+.section .main .line {
+  width: 60px;
+  height: 2px;
+  background: #212121;
+  margin: 0 auto; }
+
+.section .main .list-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  text-align: center; }
+
+.section .main .list-container .front-end, .section .main .list-container .back-end, .section .main .list-container .consult {
+  max-width: 500px;
+  padding: 20px; }
+
+.section .main .list-container .front-end .icon-front {
+  background-image: url("/img/monitor.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.section .main .list-container .front-end p {
+  max-width: 270px; }
+
+.section .main .list-container .back-end .icon-back {
+  background-image: url("/img/monitor.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.section .main .list-container .back-end p {
+  max-width: 270px; }
+
+.section .main .list-container .consult .icon-consult {
+  background-image: url("/img/monitor.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; }
+
+.section .main .list-container .consult p {
+  max-width: 270px; }

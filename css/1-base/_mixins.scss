@@ -1,7 +1,7 @@
 @mixin btn {
-    width: 140px;
+    width: 150px;
     height: 50px;
-    background: black;
+    background: $blacky;
     color: white;
     display: inline-block;
     text-align: center;
@@ -9,11 +9,24 @@
     line-height: 50px;
     text-transform: uppercase;
     font-weight: 100;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
-        &:hover {            
-            background: white;
-            cursor: pointer;
-            color: black;
-        }
+    &:hover {
+        background: white;
+        cursor: pointer;
+        color: $blacky;
+    }
+}
+
+@mixin headline {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@mixin line {
+    width: 60px;
+    height: 2px;
+    background: $blacky;
+    margin: 0 auto
 }
