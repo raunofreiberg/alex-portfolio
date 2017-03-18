@@ -73,7 +73,7 @@ body, html {
   height: 50px;
   background: #212121;
   color: white;
-  display: inline-block;
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 1px;
   line-height: 50px;
@@ -83,7 +83,8 @@ body, html {
   transition: all 0.3s ease-in-out;
   margin-right: 20px;
   box-sizing: border-box;
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: inline-block; }
 
 .container .left-container .content .button:hover {
   background: white;
@@ -214,7 +215,7 @@ section .about .btn {
   height: 50px;
   background: #212121;
   color: white;
-  display: inline-block;
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 1px;
   line-height: 50px;
@@ -574,7 +575,7 @@ section .gallery .button {
   height: 50px;
   background: #212121;
   color: white;
-  display: inline-block;
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 1px;
   line-height: 50px;
