@@ -1,0 +1,67 @@
+@import '1-base/_vars.scss';
+@import '1-base/_mixins.scss';
+@import '1-base/_breakpoints.scss';
+@import '../bourbon/_bourbon.scss';
+section {
+    //background: pink;    
+    font-family: $mainfont;
+    h5 {
+        @include headline;
+        max-width: 500px;
+        max-height: 100px;
+        margin: 0 auto 20px;
+    }
+    .line {
+        @include line;
+    }
+    .gallery {
+        text-align: center;
+        margin-top: 30px;
+        .item {
+            width: 370px;
+            height: 280px;
+            background-image: url("http://fillmurray.com/370/280");
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            margin-top: 10px;
+            overflow: hidden;            
+            .content {
+                background: rgba(0, 0, 0, 0.80);
+                position: absolute;
+                color: white;
+                text-align: center;
+                line-height: 280px;
+                text-transform: uppercase;
+                font-size: 30px;
+                height: 100%;
+                width: 100%;
+                top: 400px;                
+                transition: all 300ms ease-in-out;
+                transition-origin: bottom-top;
+                    &:after {
+                        content: '';
+                        border: 1px solid white;
+                        padding: 20px;
+                        height: 77%;
+                        position: absolute;
+                        left: 10px;
+                        right: 10px;
+                        top: 10px;           
+                        
+                        
+                    }
+            }
+            &:hover .content {
+                top: 0;
+                visibility: visible;
+                cursor: pointer;
+            }
+        }
+        .button {
+            @include btn;
+            margin-top: 40px;
+            width: 170px;
+        }
+    }
+}

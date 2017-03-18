@@ -3,9 +3,10 @@
 @import '1-base/_breakpoints.scss';
 @import '../bourbon/_bourbon.scss';
 section {
-    height: 850px;
+    height: 868px;
     max-width: 1170px;
     //background: pink;
+    padding-bottom: 120px;
     margin: 0 auto;
                     @include breakpoint(lg) {
                 height: 1200px;
@@ -80,7 +81,7 @@ section {
         }
         #html {
             span {
-                width: 345px;
+                width: 260px;
             }
             &:after {
                 content: 'HTML/CSS';
