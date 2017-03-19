@@ -36,8 +36,8 @@
             overflow: hidden;            
             @include breakpoint(phone) {
                 margin: 10px auto;
-                max-width: 300px;
-                max-height: 300px;
+                max-width: 270px;
+                max-height: 180px;
             }
             .content {
                 background: rgba(0, 0, 0, 0.80);

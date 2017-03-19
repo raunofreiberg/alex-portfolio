@@ -39,8 +39,8 @@
             }       
             @include breakpoint(phone) {
                 min-height: 1150px;   
-                margin-left: 20px;
-                margin-right: 20px;             
+                margin-left: 10px;      
+                margin-right: 10px;                      
             }
         h4 {
             @include headline;
