@@ -19,7 +19,7 @@ body, html {
             border-left: 0px;
             z-index: 0;
             padding: 300px 200px;
-            position: absolute;  
+            @include position(absolute);
                  @include breakpoint(xxs) {
                     padding: 250px 100px;
                 }          
@@ -35,8 +35,8 @@ body, html {
     @include display(flex);
     flex-wrap: nowrap;
     align-items: center;
-        @include breakpoint(phone) {
-            min-width: 60%;            
+        @include breakpoint(xxs) {
+            flex-basis: 100%;         
         }
         .content {
             //background: pink;
@@ -100,13 +100,16 @@ body, html {
                     }
                 }     
         }
+        @include breakpoint(xxs) {
+            flex-basis: 0%;
+        }
         .border {
             border: 12px solid white;
             border-right: 0px;            
             @include position(absolute, 200px 0 null null);
             padding: 240px 150px;
             z-index: 0;            
-                @include breakpoint(phone) {
+                @include breakpoint(xxs) {
                     display: none;
                 }          
         }
