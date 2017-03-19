@@ -756,7 +756,9 @@ section .skills #java:after {
 .contact form {
   margin: 80px auto; }
 
-.contact form input, .contact form textarea, .contact form select {
+.contact form input,
+.contact form textarea,
+.contact form select {
   outline: none;
   -webkit-appearance: none;
   border-radius: 0; }
@@ -770,7 +772,8 @@ section .skills #java:after {
   font-size: 16px;
   color: #212121;
   padding-top: 10px;
-  margin-left: 30px; }
+  margin-left: 30px;
+  transition: all 0.3s ease-in-out; }
 
 @media (max-width: 1200px) {
   .contact form .info input {
@@ -778,8 +781,12 @@ section .skills #java:after {
     margin: 20px auto;
     display: block; } }
 
+.contact form .info input:focus {
+  width: 560px;
+  font-size: 20px; }
+
 .contact form textarea {
-  width: 1110px;
+  width: 1120px;
   background: none;
   border: none;
   border-bottom: 2px solid black;
@@ -787,12 +794,16 @@ section .skills #java:after {
   display: block;
   font-size: 16px;
   height: 200px;
-  margin: 60px 30px 0 30px; }
+  margin: 60px 30px 0 30px;
+  transition: all 0.3s ease-in-out; }
 
 @media (max-width: 1200px) {
   .contact form textarea {
     max-width: 300px;
     margin: 30px auto; } }
+
+.contact form textarea:focus {
+  font-size: 20px; }
 
 .contact input:last-child {
   width: 150px;
