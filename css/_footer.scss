@@ -44,6 +44,9 @@ footer {
         margin-right: 200px;
         text-align: center;
         font-size: 18px;
+        @include breakpoint(xxs) {
+            margin-right: 0;
+        }
     }
     .fa-angle-up {
         width: 40px;

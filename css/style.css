@@ -914,6 +914,10 @@ footer h1 {
   text-align: center;
   font-size: 18px; }
 
+@media (max-width: 768px) {
+  footer h1 {
+    margin-right: 0; } }
+
 footer .fa-angle-up {
   width: 40px;
   background: white;
