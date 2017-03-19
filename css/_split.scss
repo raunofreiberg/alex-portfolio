@@ -1,0 +1,50 @@
+@import '1-base/_vars.scss';
+@import '1-base/_mixins.scss';
+@import '1-base/_breakpoints.scss';
+@import '../bourbon/_bourbon.scss';
+.split {
+    max-width: 100%;
+    height: auto;      
+    min-height: 290px;  
+    background-image: url('../img/split-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+    @include align-items(center);
+    flex-wrap: wrap;
+    text-align: center;
+    @include display(flex);
+    @include justify-content(space-around);
+    color: white;
+    font-family: $mainfont;
+        h1 {
+            font-size: 100px;          
+            margin: 0;             
+            font-weight: 100;  
+        }
+        p {
+            font-size: 28px;
+            margin-top: 0;
+            font-weight: 100;
+            
+        }
+    &:after {
+        content: '';
+        background: rgba(0, 0, 0, 0.70);
+        @include position(absolute, 0 0 null 0);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+    .left,
+    .center,
+    .right {
+        position: relative;
+        z-index: 1;        
+        max-height: 280px;
+        max-width: 240px;
+        padding: 20px;
+    }
+}

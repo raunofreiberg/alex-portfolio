@@ -135,8 +135,8 @@ body, html {
     display: none; } }
 
 .container .right-container .img {
-  background-image: url("../img/hero-bg.png");
-  max-width: 650px;
+  background-image: url("../img/hero.png");
+  max-width: 800px;
   position: relative;
   margin: 0 auto;
   height: 100%;
@@ -166,7 +166,7 @@ section .about h2 {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: normal;
-  margin-bottom: 15px; }
+  margin-bottom: 20px; }
 
 section .about .line {
   width: 60px;
@@ -235,8 +235,7 @@ section .skills {
   max-width: 1170px;
   height: 350px;
   font-family: "Cormorant";
-  text-align: center;
-  padding-bottom: 50px; }
+  text-align: center; }
 
 section .skills h3 {
   font-size: 36px;
@@ -244,6 +243,44 @@ section .skills h3 {
   font-weight: normal;
   text-align: center;
   margin-bottom: 15px; }
+
+section .skills .line {
+  width: 60px;
+  height: 2px;
+  background: #212121;
+  margin: 0 auto;
+  position: relative; }
+
+section .skills .line:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  left: 24px;
+  height: 2px; }
+
+section .skills .line:before {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 24px;
+  height: 2px; }
+
+section .skills .line2 {
+  width: 30px;
+  height: 2px;
+  background: #212121;
+  margin: 3px auto;
+  position: relative; }
+
+section .skills .line2:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 5px;
+  height: 2px; }
 
 section .skills .skill {
   background: #dfdfdf;
@@ -452,10 +489,14 @@ section .skills #java:after {
   max-width: 270px;
   min-width: 200px; }
 
-section {
-  font-family: "Cormorant"; }
+.section-gallery {
+  font-family: "Cormorant";
+  height: auto;
+  max-width: 1170px;
+  padding-bottom: 200px;
+  margin: 0 auto; }
 
-section h5 {
+.section-gallery h5 {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: normal;
@@ -464,14 +505,14 @@ section h5 {
   max-height: 100px;
   margin: 0 auto 20px; }
 
-section .line {
+.section-gallery .line {
   width: 60px;
   height: 2px;
   background: #212121;
   margin: 0 auto;
   position: relative; }
 
-section .line:after {
+.section-gallery .line:after {
   content: '';
   background: white;
   position: absolute;
@@ -479,7 +520,7 @@ section .line:after {
   left: 24px;
   height: 2px; }
 
-section .line:before {
+.section-gallery .line:before {
   content: '';
   background: white;
   position: absolute;
@@ -487,14 +528,14 @@ section .line:before {
   right: 24px;
   height: 2px; }
 
-section .line2 {
+.section-gallery .line2 {
   width: 30px;
   height: 2px;
   background: #212121;
   margin: 3px auto;
   position: relative; }
 
-section .line2:after {
+.section-gallery .line2:after {
   content: '';
   background: white;
   position: absolute;
@@ -502,11 +543,11 @@ section .line2:after {
   right: 5px;
   height: 2px; }
 
-section .gallery {
+.section-gallery .gallery {
   text-align: center;
   margin-top: 30px; }
 
-section .gallery .item {
+.section-gallery .gallery .item {
   width: 370px;
   height: 280px;
   background-image: url("http://fillmurray.com/370/280");
@@ -518,12 +559,12 @@ section .gallery .item {
   overflow: hidden; }
 
 @media (max-width: 479px) {
-  section .gallery .item {
+  .section-gallery .gallery .item {
     margin: 10px auto;
     max-width: 300px;
     max-height: 300px; } }
 
-section .gallery .item .content {
+.section-gallery .gallery .item .content {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   color: white;
@@ -537,7 +578,7 @@ section .gallery .item .content {
   transition: all 300ms ease-in-out;
   transform-origin: bottom-top; }
 
-section .gallery .item .content:after {
+.section-gallery .gallery .item .content:after {
   content: '';
   border: 1px solid white;
   padding: 20px;
@@ -547,30 +588,30 @@ section .gallery .item .content:after {
   right: 10px;
   top: 10px; }
 
-section .gallery .item:hover .content {
+.section-gallery .gallery .item:hover .content {
   top: 0;
   visibility: visible;
   cursor: pointer; }
 
-section .gallery .item:nth-child(1) {
+.section-gallery .gallery .item:nth-child(1) {
   background-image: url("../img/1.jpeg"); }
 
-section .gallery .item:nth-child(2) {
+.section-gallery .gallery .item:nth-child(2) {
   background-image: url("../img/2.jpeg"); }
 
-section .gallery .item:nth-child(3) {
+.section-gallery .gallery .item:nth-child(3) {
   background-image: url("../img/3.jpeg"); }
 
-section .gallery .item:nth-child(4) {
+.section-gallery .gallery .item:nth-child(4) {
   background-image: url("../img/4.jpeg"); }
 
-section .gallery .item:nth-child(5) {
+.section-gallery .gallery .item:nth-child(5) {
   background-image: url("../img/5.jpeg"); }
 
-section .gallery .item:nth-child(6) {
+.section-gallery .gallery .item:nth-child(6) {
   background-image: url("../img/6.jpeg"); }
 
-section .gallery .button {
+.section-gallery .gallery .button {
   width: 150px;
   height: 50px;
   background: #212121;
@@ -586,7 +627,202 @@ section .gallery .button {
   margin-top: 40px;
   width: 170px; }
 
-section .gallery .button:hover {
+.section-gallery .gallery .button:hover {
   background: white;
   cursor: pointer;
   color: #212121; }
+
+.split {
+  max-width: 100%;
+  height: auto;
+  min-height: 290px;
+  background-image: url("../img/split-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  flex-wrap: wrap;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  color: white;
+  font-family: "Cormorant"; }
+
+.split h1 {
+  font-size: 100px;
+  margin: 0;
+  font-weight: 100; }
+
+.split p {
+  font-size: 28px;
+  margin-top: 0;
+  font-weight: 100; }
+
+.split:after {
+  content: '';
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%; }
+
+.split .left,
+.split .center,
+.split .right {
+  position: relative;
+  z-index: 1;
+  max-height: 280px;
+  max-width: 240px;
+  padding: 20px; }
+
+.contact {
+  max-width: 1170px;
+  height: 670px;
+  margin: 0 auto; }
+
+.contact h1 {
+  max-width: 300px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin: 120px auto 20px auto; }
+
+.contact .line {
+  width: 60px;
+  height: 2px;
+  background: #212121;
+  margin: 0 auto;
+  position: relative; }
+
+.contact .line:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  left: 24px;
+  height: 2px; }
+
+.contact .line:before {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 24px;
+  height: 2px; }
+
+.contact .line2 {
+  width: 30px;
+  height: 2px;
+  background: #212121;
+  margin: 3px auto;
+  position: relative; }
+
+.contact .line2:after {
+  content: '';
+  background: white;
+  position: absolute;
+  width: 2px;
+  right: 5px;
+  height: 2px; }
+
+.contact form {
+  margin: 80px auto; }
+
+.contact form input, .contact form textarea, .contact form select {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+.contact form .info input {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 540px;
+  background: none;
+  font-family: "Cormorant";
+  font-size: 16px;
+  color: #212121;
+  padding-top: 10px;
+  margin-left: 30px; }
+
+@media (max-width: 1200px) {
+  .contact form .info input {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block; } }
+
+.contact form textarea {
+  width: 1110px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  font-family: "Cormorant";
+  display: block;
+  font-size: 16px;
+  height: 200px;
+  margin: 60px 30px 0 30px; }
+
+@media (max-width: 1200px) {
+  .contact form textarea {
+    max-width: 300px;
+    margin: 30px auto; } }
+
+.contact input:last-child {
+  width: 150px;
+  height: 50px;
+  background: #212121;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  font-family: "Cormorant";
+  font-size: 16px;
+  width: 170px;
+  border: none;
+  border: 1px solid #212121;
+  background: white;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+  color: #212121;
+  display: block;
+  margin: 45px auto; }
+
+.contact input:last-child:hover {
+  background: white;
+  cursor: pointer;
+  color: #212121; }
+
+.contact input:last-child:hover {
+  background: #212121;
+  color: white; }

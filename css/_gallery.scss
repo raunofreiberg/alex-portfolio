@@ -2,9 +2,13 @@
 @import '1-base/_mixins.scss';
 @import '1-base/_breakpoints.scss';
 @import '../bourbon/_bourbon.scss';
-section {
-    //background: pink;    
+.section-gallery { 
     font-family: $mainfont;
+    height: auto;    
+    max-width: 1170px;
+    //background: pink;
+    padding-bottom: 200px;
+    margin: 0 auto;
     h5 {
         @include headline;
         max-width: 700px;

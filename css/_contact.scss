@@ -1,0 +1,80 @@
+@import '1-base/_vars.scss';
+@import '1-base/_mixins.scss';
+@import '1-base/_breakpoints.scss';
+@import '../bourbon/_bourbon.scss';
+
+.contact {
+    max-width: 1170px;
+    height: 670px;
+    //background: pink;
+    margin: 0 auto;
+        h1 {            
+            max-width: 300px;
+            @include headline;
+            margin: 120px auto 20px auto;
+        }
+        .line {
+            @include line;
+        }
+        .line2 {
+            @include line2;
+        }
+        form {
+            margin: 80px auto;                
+
+            input, textarea, select {
+                outline: none;
+                -webkit-appearance: none;
+                border-radius: 0;
+            }          
+                .info input {         
+                    border: none;                                
+                    border-bottom: 2px solid black;
+                    width: 540px;                    
+                    background: none;                                        
+                    font-family: $mainfont;
+                    font-size: 16px;
+                    color: $blacky;
+                    padding-top: 10px;
+                    margin-left: 30px;                     
+                        @include breakpoint(lg) {
+                            max-width: 300px;
+                            margin: 20px auto;
+                            display: block;
+                        }
+                }
+            
+            textarea {
+                width: 1110px;
+                background: none;
+                border: none;
+                border-bottom: 2px solid black;
+                font-family: $mainfont;
+                display: block;                
+                font-size: 16px;
+                height: 200px;
+                margin: 60px 30px 0 30px;                                                            
+                    @include breakpoint(lg) {
+                        max-width: 300px;
+                        margin: 30px auto;
+                    }
+            }
+        }
+        input:last-child {
+            @include btn;
+            font-family: $mainfont;
+            font-size: 16px;
+            width: 170px;            
+            border: none;
+            border: 1px solid $blacky;
+            background: white;            
+            box-shadow: 0 7px 20px rgba(0,0,0,0.20);
+            color: $blacky;
+            display: block;
+            margin: 45px auto;      
+                &:hover {
+                    background: $blacky;
+                    color: white;
+                }      
+        }
+}

@@ -23,7 +23,7 @@ section {
             font-size: 36px;
             text-transform: uppercase;
             font-weight: normal;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .line {
             @include line;
@@ -46,11 +46,16 @@ section {
         height: 350px;
         //background: darkmagenta;
         font-family: $mainfont;
-        text-align: center;
-        padding-bottom: 50px;
+        text-align: center;        
         h3 {
             @include headline;
             margin-bottom: 15px;
+        }
+        .line {
+            @include line;
+        }
+        .line2 {
+            @include line2;
         }
 
         .skill {
