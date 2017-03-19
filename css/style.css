@@ -159,7 +159,7 @@ section .about {
   height: 400px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 120px;
+  padding: 120px 0 60px 0;
   font-family: "Cormorant"; }
 
 section .about h2 {
@@ -208,7 +208,9 @@ section .about .line2:after {
 
 section .about p {
   margin-top: 40px;
-  padding: 0 30px; }
+  padding: 0 30px;
+  line-height: 25px;
+  letter-spacing: 0.75px; }
 
 section .about .btn {
   width: 150px;
@@ -837,3 +839,91 @@ section .skills #java:after {
 .contact input:last-child:hover {
   background: #212121;
   color: white; }
+
+footer {
+  max-width: 100%;
+  min-height: 100px;
+  height: auto;
+  background: #212121;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+footer .social {
+  width: 240px;
+  height: 40px;
+  padding: 20px; }
+
+footer .social i {
+  width: 40px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out; }
+
+footer .social i:last-child {
+  margin-right: 0; }
+
+footer .social i:hover {
+  color: #212121;
+  background: white;
+  cursor: pointer; }
+
+footer h1 {
+  color: white;
+  font-family: "Cormorant";
+  font-weight: 100;
+  width: 270px;
+  text-align: center;
+  font-size: 18px; }
+
+footer .fa-angle-up {
+  width: 40px;
+  background: white;
+  color: #212121;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 26px;
+  height: 40px;
+  transition: all 0.3s ease-in-out; }
+
+footer .fa-angle-up:hover {
+  transform: scale(1.1);
+  cursor: pointer; }

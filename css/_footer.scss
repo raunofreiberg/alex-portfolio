@@ -1,0 +1,62 @@
+@import '1-base/_vars.scss';
+@import '1-base/_mixins.scss';
+@import '1-base/_breakpoints.scss';
+@import '../bourbon/_bourbon.scss';
+footer {
+    max-width: 100%;
+    min-height: 100px;
+    height: auto;
+    background: $blacky;
+    @include display(flex);
+    @include justify-content(space-around);
+    @include align-items(center);
+    @include box-sizing(border-box);
+    @include flex-wrap(wrap);
+    .social {
+        width: 240px;
+        height: 40px;
+        padding: 20px;
+        i {
+            width: 40px;
+            border: 1px solid white;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            margin-right: 20px;
+            transition: all 0.3s ease-in-out;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                color: $blacky;
+                background: white;
+                cursor: pointer;
+            }
+        }
+    }
+    h1 {
+        color: white;
+        font-family: $mainfont;
+        font-weight: 100;
+        width: 270px;
+        text-align: center;
+        font-size: 18px;
+    }
+    .fa-angle-up {
+        width: 40px;
+        background: white;
+        color: $blacky;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 26px;
+        height: 40px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}

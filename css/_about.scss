@@ -17,7 +17,7 @@ section {
         margin: 0 auto;
         text-align: center;
         //background: honeydew;
-        padding-top: 120px;
+        padding: 120px 0 60px 0;
         font-family: $mainfont;
         h2 {
             font-size: 36px;
@@ -34,6 +34,8 @@ section {
         p {
             margin-top: 40px;
             padding: 0 30px;
+            line-height: 25px;
+            letter-spacing: 0.75px;
         }
         .btn {
             @include btn;
