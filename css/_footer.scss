@@ -40,7 +40,8 @@ footer {
         color: white;
         font-family: $mainfont;
         font-weight: 100;
-        width: 270px;
+        width: 240px;
+        margin-right: 200px;
         text-align: center;
         font-size: 18px;
     }
@@ -57,6 +58,10 @@ footer {
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
+        }
+        @include breakpoint(xxs) {
+            display: none;
+            
         }
     }
 }

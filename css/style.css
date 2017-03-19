@@ -909,7 +909,8 @@ footer h1 {
   color: white;
   font-family: "Cormorant";
   font-weight: 100;
-  width: 270px;
+  width: 240px;
+  margin-right: 200px;
   text-align: center;
   font-size: 18px; }
 
@@ -927,3 +928,7 @@ footer .fa-angle-up {
 footer .fa-angle-up:hover {
   transform: scale(1.1);
   cursor: pointer; }
+
+@media (max-width: 768px) {
+  footer .fa-angle-up {
+    display: none; } }
