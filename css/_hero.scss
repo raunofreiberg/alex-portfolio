@@ -17,7 +17,7 @@ body, html {
         .border {
             border: 15px solid #e8e8e8;
             border-left: 0px;
-            z-index: 0;
+            z-index: 0;            
             padding: 300px 200px;
             @include position(absolute);
                  @include breakpoint(xxs) {

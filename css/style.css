@@ -399,7 +399,7 @@ section .skills #java:after {
   background: white;
   font-family: "Cormorant";
   box-shadow: 0 0 70px rgba(0, 0, 0, 0.45);
-  height: 517px;
+  height: auto;
   min-width: 300px;
   max-width: 1170px;
   position: absolute;
@@ -411,12 +411,10 @@ section .skills #java:after {
 @media (max-width: 1200px) {
   .section .main {
     margin-left: 50px;
-    margin-right: 50px;
-    min-height: 800px; } }
+    margin-right: 50px; } }
 
 @media (max-width: 479px) {
   .section .main {
-    min-height: 1150px;
     margin-left: 10px;
     margin-right: 10px; } }
 
@@ -477,7 +475,7 @@ section .skills #java:after {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 30px;
   text-align: center; }
 
 .section .main .list-container .front-end, .section .main .list-container .back-end, .section .main .list-container .consult, .section .main .list-container .back-end, .section .main .list-container .consult {
