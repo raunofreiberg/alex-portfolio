@@ -7,7 +7,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function() {
-  gulp.src('scss/*.scss')
+  gulp.src('scss/**/*.scss')
     .pipe(sass())
     .on('error', function (err) {
             console.log(err.toString());
@@ -19,7 +19,7 @@ gulp.task('sass', function() {
 
 // define the gulp task that will watch for changes in your sass
 gulp.task('watch', function() {
-  gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch('scss/**/*', ['sass']);
 });
 
 // define the default gulp task

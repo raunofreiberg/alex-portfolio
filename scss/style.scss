@@ -1,18 +1,17 @@
     //IMPORT BOURBON
     @import '../bourbon/_bourbon.scss';
     //HERO
-    @import '_hero.scss';
+    @import '2-includes/_hero.scss';
     //ABOUT SECTION
-    @import '_about.scss';
+    @import '2-includes/_about.scss';
     //WHAT I DO
-    @import '_whatido.scss';
+    @import '2-includes/_whatido.scss';
     //GALLERY
-    @import '_gallery.scss';
+    @import '2-includes/_gallery.scss';
     //SPLIT
-    @import '_split.scss';
+    @import '2-includes/_split.scss';
     //CONTACT FORM
-    @import '_contact.scss';
+    @import '2-includes/_contact.scss';
     //FOOTER
-    @import '_footer.scss';
-    
+    @import '2-includes/_footer.scss';
     
