@@ -1,7 +1,7 @@
 @import '1-base/_vars.scss';
 @import '1-base/_mixins.scss';
 @import '1-base/_breakpoints.scss';
-@import '../bourbon/_bourbon.scss';
+@import '../3-tools/bourbon/_bourbon.scss';
 .section-gallery { 
     font-family: $mainfont;
     height: auto;    
