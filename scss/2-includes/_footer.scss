@@ -12,7 +12,7 @@ footer {
     @include align-items(center);
     @include box-sizing(border-box);
     @include flex-wrap(wrap);
-    .social {
+    .footer-social--container {
         width: 240px;
         height: 40px;
         padding: 20px;

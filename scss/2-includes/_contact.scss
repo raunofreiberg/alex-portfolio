@@ -2,7 +2,7 @@
 @import '1-base/_mixins.scss';
 @import '1-base/_breakpoints.scss';
 @import '../3-tools/bourbon/_bourbon.scss';
-.contact {
+.section-contact {
     max-width: 1170px;
     height: 670px;
     //background: pink;
@@ -12,10 +12,10 @@
         @include headline;
         margin: 120px auto 20px auto;
     }
-    .line {
+    .content-separator--line {
         @include line;
     }
-    .line2 {
+    .content-separator--line_xs {
         @include line2;
     }
     form {
@@ -27,7 +27,7 @@
             -webkit-appearance: none;
             border-radius: 0;
         }
-        .info input {
+        .section-contact--input_info input {
             border: none;
             border-bottom: 2px solid black;
             width: 540px;

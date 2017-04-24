@@ -15,16 +15,16 @@
         max-height: 100px;
         margin: 0 auto 20px;
     }
-    .line {
+    .content-separator--line {
         @include line;
     }
-    .line2 {
+    .content-separator--line_xs {
         @include line2;
     }
-    .gallery {
+    .section-gallery--gallery_container {
         text-align: center;
         margin-top: 30px;
-        .item {
+        .section-gallery--item {
             width: 370px;
             height: 280px;
             background-image: url("http://fillmurray.com/370/280");
@@ -39,7 +39,7 @@
                 max-width: 300px;
                 max-height: 300px;
             }
-            .content {
+            .section-gallery--item_content {
                 background: rgba(0, 0, 0, 0.80);
                 position: absolute;
                 color: white;
@@ -88,7 +88,7 @@
             }
 
         }
-        .button {
+        .button-cta {
             @include btn;
             margin-top: 40px;
             width: 170px;

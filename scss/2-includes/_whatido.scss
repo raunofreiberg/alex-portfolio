@@ -2,7 +2,7 @@
 @import '1-base/_mixins.scss';
 @import '1-base/_breakpoints.scss';
 @import '../3-tools/bourbon/_bourbon.scss';
-.section {
+.section-card {
     height: 860px;
     max-width: 100%;
     position: relative;
@@ -13,7 +13,7 @@
         @include breakpoint(phone) {
             height: 1350px;
         }
-    .bg {
+    .section-card--bg {
         background-image: url("../img/bg.jpg");
         width: 100%;
         height: 400px;
@@ -21,7 +21,7 @@
         background-position: center;
         filter: brightness(40%);        
     }
-    .main {
+    .section-card--container {
         background: white;
         font-family: $mainfont;
         box-shadow: 0 0 70px rgba(0,0,0,0.45);
@@ -45,13 +45,13 @@
             max-width: 300px;
             text-align: center;
         }
-        .line {
+        .content-separator--line {
             @include line;
         }
-        .line2 {
+        .content-separator--line_xs {
             @include line2;
         }
-        .list-container {
+        .section-card--flex_container {
             @include display(flex);
             justify-content: center;  
             flex-wrap: wrap;                      

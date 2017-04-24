@@ -11,7 +11,7 @@ section {
     @include breakpoint(lg) {
         height: 1200px;
     }
-    .about {
+    .section-about {
         max-width: 570px;
         height: 400px;
         margin: 0 auto;
@@ -25,10 +25,10 @@ section {
             font-weight: normal;
             margin-bottom: 20px;
         }
-        .line {
+        .content-separator--line {
             @include line;
         }
-        .line2 {
+        .content-separator--line_xs {
             @include line2;
         }
         p {
@@ -37,13 +37,13 @@ section {
             line-height: 25px;
             letter-spacing: 0.75px;
         }
-        .btn {
+        .about-btn {
             @include btn;
             width: 200px;
             margin-top: 40px;
         }
     }
-    .skills {
+    .section-about--skills {
         max-width: 1170px;
         height: 350px;
         //background: darkmagenta;
@@ -53,10 +53,10 @@ section {
             @include headline;
             margin-bottom: 15px;
         }
-        .line {
+        .content-separator--line {
             @include line;
         }
-        .line2 {
+        .content-separator--line_xs {
             @include line2;
         }
 

@@ -2,7 +2,7 @@
 @import '1-base/_mixins.scss';
 @import '1-base/_breakpoints.scss';
 @import '../3-tools/bourbon/_bourbon.scss';
-.split {
+.section-split {
     max-width: 100%;
     height: auto;      
     min-height: 290px;  
@@ -38,9 +38,9 @@
         margin-right: auto;
         height: 100%;
     }
-    .left,
-    .center,
-    .right {
+    .section-split--years,
+    .section-split--projects,
+    .section-split--seconds {
         position: relative;
         z-index: 1;        
         max-height: 280px;

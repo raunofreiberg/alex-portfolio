@@ -9,12 +9,12 @@ body, html {
     padding: 0;         
 }
 
-.container {
+.hero-container {
     @include display(flex);
     flex-wrap: nowrap;
     position: relative;
 
-        .border {
+        .hero-border {
             border: 15px solid #e8e8e8;
             border-left: 0px;
             z-index: 0;            
@@ -28,7 +28,7 @@ body, html {
                 }
         }
 
-.left-container {
+.hero-content--container {
     //background: lightblue;
     height: 100vh;
     flex-basis: 50%;
@@ -38,7 +38,7 @@ body, html {
         @include breakpoint(xxs) {
             flex-basis: 100%;         
         }
-        .content {
+        .hero-content {
             //background: pink;
             max-width: 500px;
             padding: 20px 40px;    
@@ -60,7 +60,7 @@ body, html {
                     font-size: 22px;
                     
                 }
-                .button {
+                .button-cta {
                     @include btn;
                     margin-right: 20px;
                     box-sizing: border-box;
@@ -83,7 +83,7 @@ body, html {
         }
 }
 
-.right-container {
+.hero-picture--container {
     position: relative;
     flex-basis: 50%;
     height: 100vh;
@@ -103,7 +103,7 @@ body, html {
         @include breakpoint(xxs) {
             flex-basis: 0%;
         }
-        .border {
+        .hero-border {
             border: 12px solid white;
             border-right: 0px;            
             @include position(absolute, 200px 0 null null);
@@ -113,7 +113,7 @@ body, html {
                     display: none;
                 }          
         }
-        .img {
+        .hero-picture--image {
             background-image: url("../img/hero.png");
             max-width: 800px;
             position: relative;
