@@ -504,7 +504,7 @@ section {
           left: 10px;
           right: 10px;
           top: 10px; }
-      .section-gallery .section-gallery--gallery_container .section-gallery--item:hover .content {
+      .section-gallery .section-gallery--gallery_container .section-gallery--item:hover .section-gallery--item_content {
         top: 0;
         visibility: visible;
         cursor: pointer; }
