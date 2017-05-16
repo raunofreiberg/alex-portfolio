@@ -66,6 +66,7 @@
             &:hover .section-gallery--item_content {
                 top: 0;
                 visibility: visible;
+                background: red;
                 cursor: pointer;
             }
             &:nth-child(1) {
