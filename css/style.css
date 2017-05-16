@@ -507,7 +507,6 @@ section {
       .section-gallery .section-gallery--gallery_container .section-gallery--item:hover .section-gallery--item_content {
         top: 0;
         visibility: visible;
-        background: red;
         cursor: pointer; }
       .section-gallery .section-gallery--gallery_container .section-gallery--item:nth-child(1) {
         background-image: url("../img/1.jpeg"); }
